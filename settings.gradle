@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Develop a native calculator application"

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter 1st Number"
+        android:inputType="numberSigned"
+        android:linksClickable="false"
+        android:longClickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Input 2nd Number"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/input1"
+        app:layout_constraintStart_toStartOf="@+id/input1"
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Result"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/input2"
+        app:layout_constraintStart_toStartOf="@+id/input2"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Input 2nd Number"
+        android:onClick="onClickAdd"
+        android:shadowColor="#FFFFFF"
+        android:text="Press for Add"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:strokeColor="#FFFFFF" />
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickSub"
+        android:text="Press for Sub"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickMul"
+        android:text="Press for Mul"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnSub"
+        app:layout_constraintStart_toStartOf="@+id/btnSub"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub" />
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickDiv"
+        android:text="Press for Div"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnMul"
+        app:layout_constraintStart_toStartOf="@+id/btnMul"
+        app:layout_constraintTop_toBottomOf="@+id/btnMul" />
+</androidx.constraintlayout.widget.ConstraintLayout>
